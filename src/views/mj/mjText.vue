@@ -295,7 +295,7 @@ load();
         <aiCanvas :chat="chat" :base64="st.uri_base64" v-if="st.isShow" @success="maskOk" />
     </NModal>
     <NModal v-model:show="st.isCustom"   preset="card"  :title="$t('mj.customTitle')" style="max-width: 600px;" @close="st.isCustom=false" >
-         <n-input    type="textarea"  v-model:value="st.customText"    round   maxlength="2000" show-count 
+         <n-input    type="textarea"  v-model:value="st.customText"    round   maxlength="100000" show-count 
       :autosize="{   minRows:3, maxRows:8 }" />
            <div class="pt-2 flex justify-between items-center">  
                 <div class="text-neutral-500">{{ $t('mj.zoominfo') }}</div>   
