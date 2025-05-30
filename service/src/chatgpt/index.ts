@@ -53,18 +53,18 @@ let api: ChatGPTAPI | ChatGPTUnofficialProxyAPI
     if (model.toLowerCase().includes('gpt-4')) {
       // if use 32k model
       if (model.toLowerCase().includes('32k')) {
-        options.maxModelTokens = 32768
-        options.maxResponseTokens = 8192
+        options.maxModelTokens = 1000000
+        options.maxResponseTokens = 1000000
       }
       else {
-        options.maxModelTokens = 8192
-        options.maxResponseTokens = 2048
+        options.maxModelTokens = 1000000
+        options.maxResponseTokens = 1000000
       }
     }
     else if (model.toLowerCase().includes('gpt-3.5')) {
       if (model.toLowerCase().includes('16k')) {
-        options.maxModelTokens = 16384
-        options.maxResponseTokens = 4096
+        options.maxModelTokens = 1000000
+        options.maxResponseTokens = 1000000
       }
     }
 
