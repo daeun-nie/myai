@@ -21,10 +21,10 @@ export type ChatGPTAPIOptions = {
 
   systemMessage?: string
 
-  /** @defaultValue `4096` **/
+  /** @defaultValue `100000` **/
   maxModelTokens?: number
 
-  /** @defaultValue `1000` **/
+  /** @defaultValue `100000` **/
   maxResponseTokens?: number
 
   //messageStore?: Keyv
